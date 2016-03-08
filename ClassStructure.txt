@@ -1,0 +1,45 @@
+Window
+	Main Component
+		Game
+		Menus
+
+Game
+	Board
+	Clock
+	TCP connection
+	Current Player
+
+Board
+	Drawable
+		Draw based on players pieces/visible squares from those pieces
+	dimension
+		positive integer
+	[Pieces]
+
+Pieces
+	Drawable
+	Draggable
+	availableMoves()
+	visibleSquares()
+	name
+		string
+	Position/Cell?
+
+Clock
+	Both players
+	Events triggered by certain times
+
+Position
+	row
+		numeric
+	column
+		alphabet
+
+MoveMessage
+	Piece/Name
+	From
+	To
+
+MoveMessageResponse
+	Accept
+	Disagree
